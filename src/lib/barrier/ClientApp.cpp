@@ -180,8 +180,9 @@ ClientApp::createScreen()
     }
     else {
         return new barrier::Screen(new XWindowsScreen(
-                args().m_display, false, args().m_disableXInitThreads,
-                args().m_yscroll, m_events), m_events);
+        new XWindowsImpl(),
+        args().m_display, false, args().m_disableXInitThreads,
+        args().m_yscroll, m_events), m_events);
     }
 #elif WINAPI_CARBON
     return new barrier::Screen(new OSXScreen(m_events, false), m_events);
