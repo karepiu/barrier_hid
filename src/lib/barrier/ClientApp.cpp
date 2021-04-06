@@ -41,7 +41,6 @@
 #include "base/Log.h"
 #include "common/Version.h"
 #include "common/PathUtilities.h"
-#include "platform/HIDScreen.h"
 
 #if WINAPI_MSWINDOWS
 #include "platform/MSWindowsScreen.h"
@@ -172,19 +171,19 @@ ClientApp::createScreen()
     return new barrier::Screen(new MSWindowsScreen(
         false, args().m_noHooks, args().m_stopOnDeskSwitch, m_events), m_events);
 #elif WINAPI_XWINDOWS
-    if (args().m_hid) {
+    /*if (args().m_hid) {
         return new barrier::Screen(new HIDScreen(
                 args().m_mouseDevice, args().m_keyboardDevice, args().m_touchDevice,
                 args().m_screenWidth, args().m_screenHeight,
                 m_events), m_events);
         //m_bye(kExitArgs);
     }
-    else {
+    else {*/
         return new barrier::Screen(new XWindowsScreen(
         new XWindowsImpl(),
         args().m_display, false, args().m_disableXInitThreads,
         args().m_yscroll, m_events), m_events);
-    }
+    //}
 #elif WINAPI_CARBON
     return new barrier::Screen(new OSXScreen(m_events, false), m_events);
 #endif
