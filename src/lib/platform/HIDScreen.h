@@ -77,7 +77,7 @@ private:
     int                 m_mousey;
 
     IEventQueue*        m_events;
-    synergy::KeyMap     m_keyMap;
+    barrier::KeyMap     m_keyMap;
 
     HIDKeyState*        m_keyState;
 };

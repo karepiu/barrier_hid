@@ -10,8 +10,8 @@
 class HIDKeyState : public KeyState {
 public:
     HIDKeyState(IEventQueue* events);
-    HIDKeyState(IEventQueue* events, synergy::KeyMap& keyMap);
-    HIDKeyState(IEventQueue *events, synergy::KeyMap& keyMap, const std::string& keyboardDevice);
+    HIDKeyState(IEventQueue* events, barrier::KeyMap& keyMap);
+    HIDKeyState(IEventQueue *events, barrier::KeyMap& keyMap, const std::string& keyboardDevice);
     ~HIDKeyState();
 
     // IKeyState overrides
@@ -25,7 +25,7 @@ public:
 
 protected:
     // KeyState overrides
-    virtual void        getKeyMap(synergy::KeyMap& keyMap);
+    virtual void        getKeyMap(barrier::KeyMap& keyMap);
     virtual void        fakeKey(const Keystroke& keystroke);
 
 private:

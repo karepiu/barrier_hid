@@ -14,7 +14,7 @@ HIDKeyState::HIDKeyState(
 }
 
 HIDKeyState::HIDKeyState(
-        IEventQueue* events, synergy::KeyMap& keyMap) :
+        IEventQueue* events, barrier::KeyMap& keyMap) :
         KeyState(events, keyMap),
         m_keyboardDevice("/dev/null")
 {
@@ -22,7 +22,7 @@ HIDKeyState::HIDKeyState(
 }
 
 HIDKeyState::HIDKeyState(
-        IEventQueue *events, synergy::KeyMap& keyMap, const std::string& keyboardDevice) :
+        IEventQueue *events, barrier::KeyMap& keyMap, const std::string& keyboardDevice) :
         KeyState(events, keyMap),
         m_keyboardDevice(keyboardDevice)
 {
@@ -61,7 +61,7 @@ void HIDKeyState::pollPressedKeys(IKeyState::KeyButtonSet &pressedKeys) const
     // TODO
 }
 
-void HIDKeyState::getKeyMap(synergy::KeyMap &keyMap)
+void HIDKeyState::getKeyMap(barrier::KeyMap &keyMap)
 {
     // TODO
 }

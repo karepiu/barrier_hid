@@ -172,14 +172,14 @@ ClientApp::createScreen()
         false, args().m_noHooks, args().m_stopOnDeskSwitch, m_events), m_events);
 #elif WINAPI_XWINDOWS
     if (args().m_hid) {
-        return new synergy::Screen(new HIDScreen(
+        return new barrier::Screen(new HIDScreen(
                 args().m_mouseDevice, args().m_keyboardDevice, args().m_touchDevice,
                 args().m_screenWidth, args().m_screenHeight,
                 m_events), m_events);
         //m_bye(kExitArgs);
     }
     else {
-        return new synergy::Screen(new XWindowsScreen(
+        return new barrier::Screen(new XWindowsScreen(
                 args().m_display, false, args().m_disableXInitThreads,
                 args().m_yscroll, m_events), m_events);
     }
