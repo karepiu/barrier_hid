@@ -41,6 +41,7 @@
 #include "base/Log.h"
 #include "common/Version.h"
 #include "common/PathUtilities.h"
+#include "platform/HIDScreen.h"
 
 #if WINAPI_MSWINDOWS
 #include "platform/MSWindowsScreen.h"
