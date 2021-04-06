@@ -167,7 +167,7 @@ public:
     virtual void        fakeMouseButton(ButtonID id, bool press) = 0;
     virtual void        fakeMouseMove(SInt32 x, SInt32 y) = 0;
     virtual void        fakeMouseRelativeMove(SInt32 dx, SInt32 dy) const = 0;
-    virtual void        fakeMouseWheel(SInt32 xDelta, SInt32 yDelta) const = 0;
+    virtual void        fakeMouseWheel(SInt32 xDelta, SInt32 yDelta);
 
     // IKeyState overrides
     virtual void        updateKeyMap() = 0;

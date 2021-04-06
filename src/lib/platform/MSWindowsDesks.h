@@ -188,7 +188,7 @@ public:
     /*!
     Synthesize a mouse wheel event of amount \c delta in direction \c axis.
     */
-    void                fakeMouseWheel(SInt32 xDelta, SInt32 yDelta) const;
+    void                fakeMouseWheel(SInt32 xDelta, SInt32 yDelta);
 
     //@}
 

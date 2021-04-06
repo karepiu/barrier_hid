@@ -752,7 +752,7 @@ MSWindowsScreen::fakeMouseRelativeMove(SInt32 dx, SInt32 dy) const
 }
 
 void
-MSWindowsScreen::fakeMouseWheel(SInt32 xDelta, SInt32 yDelta) const
+MSWindowsScreen::fakeMouseWheel(SInt32 xDelta, SInt32 yDelta)
 {
     m_desks->fakeMouseWheel(xDelta, yDelta);
 }

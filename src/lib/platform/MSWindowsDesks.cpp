@@ -336,7 +336,7 @@ MSWindowsDesks::fakeMouseRelativeMove(SInt32 dx, SInt32 dy) const
 }
 
 void
-MSWindowsDesks::fakeMouseWheel(SInt32 xDelta, SInt32 yDelta) const
+MSWindowsDesks::fakeMouseWheel(SInt32 xDelta, SInt32 yDelta)
 {
     sendMessage(BARRIER_MSG_FAKE_WHEEL, xDelta, yDelta);
 }

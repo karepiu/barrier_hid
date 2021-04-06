@@ -670,7 +670,7 @@ OSXScreen::fakeMouseRelativeMove(SInt32 dx, SInt32 dy) const
 }
 
 void
-OSXScreen::fakeMouseWheel(SInt32 xDelta, SInt32 yDelta) const
+OSXScreen::fakeMouseWheel(SInt32 xDelta, SInt32 yDelta)
 {
 	if (xDelta != 0 || yDelta != 0) {
 		// create a scroll event, post it and release it.  not sure if kCGScrollEventUnitLine

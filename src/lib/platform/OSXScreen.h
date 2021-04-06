@@ -80,7 +80,7 @@ public:
     virtual void        fakeMouseButton(ButtonID id, bool press);
     virtual void        fakeMouseMove(SInt32 x, SInt32 y);
     virtual void        fakeMouseRelativeMove(SInt32 dx, SInt32 dy) const;
-    virtual void        fakeMouseWheel(SInt32 xDelta, SInt32 yDelta) const;
+    virtual void        fakeMouseWheel(SInt32 xDelta, SInt32 yDelta);
 
     // IPlatformScreen overrides
     virtual void        enable();

@@ -829,7 +829,7 @@ XWindowsScreen::fakeMouseRelativeMove(SInt32 dx, SInt32 dy) const
 }
 
 void
-XWindowsScreen::fakeMouseWheel(SInt32 xDelta, SInt32 yDelta) const
+XWindowsScreen::fakeMouseWheel(SInt32 xDelta, SInt32 yDelta)
 {
     int numEvents;
 
