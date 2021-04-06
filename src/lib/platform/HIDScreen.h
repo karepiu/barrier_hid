@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "core/PlatformScreen.h"
+#include "barrier/PlatformScreen.h"
 #include "HIDKeyboard.h"
 #include "HIDKeyState.h"
 #include "HIDMouse.h"

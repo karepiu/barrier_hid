@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "core/mouse_types.h"
+#include "barrier/mouse_types.h"
 #include "HIDDevice.h"
 
 class HIDMouse : public HIDDevice {

@@ -3,7 +3,7 @@
 //
 
 #include "base/Log.h"
-#include "core/XScreen.h"
+#include "barrier/XScreen.h"
 #include "HIDDevice.h"
 
 #include <unistd.h>

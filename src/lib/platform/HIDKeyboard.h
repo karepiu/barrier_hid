@@ -5,7 +5,7 @@
 #pragma once
 
 #include <string>
-#include <core/key_types.h>
+#include <barrier/key_types.h>
 #include <map>
 #include "HIDDevice.h"
 

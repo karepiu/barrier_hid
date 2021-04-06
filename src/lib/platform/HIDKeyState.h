@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "core/KeyState.h"
+#include "barrier/KeyState.h"
 #include "HIDKeyboard.h"
 
 class HIDKeyState : public KeyState {
