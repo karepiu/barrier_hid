@@ -37,5 +37,3 @@ jobs:
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
       run: make
-
-      run: ctest -C $BUILD_TYPE
