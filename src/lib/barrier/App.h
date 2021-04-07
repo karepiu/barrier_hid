@@ -23,6 +23,7 @@
 #include "base/String.h"
 #include "base/Log.h"
 #include "base/EventQueue.h"
+#include "base/StdinListen.h"
 #include "net/SocketMultiplexer.h"
 #include "common/common.h"
 #include <memory>
@@ -108,6 +109,7 @@ private:
 protected:
     void                initIpcClient();
     void                cleanupIpcClient();
+    void                initStdinListen();
     void                runEventsLoop(void*);
 
     IArchTaskBarReceiver* m_taskBarReceiver;
@@ -122,6 +124,7 @@ private:
     ARCH_APP_UTIL m_appUtil;
     IpcClient*            m_ipcClient;
     std::unique_ptr<SocketMultiplexer> m_socketMultiplexer;
+    StdinListen* m_stdin;
 };
 
 class MinimalApp : public App {
