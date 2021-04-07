@@ -64,7 +64,7 @@ App::App(IEventQueue* events, CreateTaskBarReceiverFunc createTaskBarReceiver, A
     m_createTaskBarReceiver(createTaskBarReceiver),
     m_appUtil(events),
     m_ipcClient(nullptr),
-    m_socketMultiplexer(nullptr)
+    m_socketMultiplexer(nullptr),
     m_stdin(nullptr)
 {
     assert(s_instance == nullptr);
