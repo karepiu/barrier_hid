@@ -14,6 +14,7 @@ that emulates usb keyboard and mouse ( and touch ).
 ## Required hardware
 
 Raspberry Pi Zero W connected to same network as Barrier server 
+BUSTER Rpi OS ( Legacy ) 
 
 ## Building the solution
 
